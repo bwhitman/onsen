@@ -48,8 +48,9 @@ For example, the RAW pin is in C30 and pin 9 is in G19
 RTC
 Put so that GND pin in H11
 and SQW is in H15
+```
 
-[pic]
+!(pics/1.jpg)
 
 Temperature sensor
 Brown cable to GND - j28
