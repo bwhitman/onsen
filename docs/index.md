@@ -50,7 +50,8 @@ Put so that GND pin in H11
 and SQW is in H15
 ```
 
-<img src="pics/1.jpg" width=500>
+
+![1](pics/1.jpg){:class="img-responsive" :width="500px"}
 
 ```
 Temperature sensor
