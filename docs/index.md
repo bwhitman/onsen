@@ -50,7 +50,7 @@ Put so that GND pin in H11
 and SQW is in H15
 ```
 
-![1](pics/1.jpg)
+<img src="pics/1.jpg" width=500>
 
 ```
 Temperature sensor
@@ -60,7 +60,7 @@ Red cable to J4
 Resistor goes from H1 to H4, either direction. Press all the way down.
 ```
 
-![2](pics/2.jpg)
+<img src="pics/2.jpg" width=500>
 
 ```
 Hookup wires
@@ -73,7 +73,7 @@ TEMP DATA: G1 - J24 (TEMP DATA -> MCU 4)
 TEMP 5V: G4 - F12 (TEMP 5V -> RTC 5V)
 ```
 
-![3](pics/3.jpg)
+<img src="pics/3.jpg" width=500>
 
 ```
 Display
@@ -94,7 +94,8 @@ Hook the female ends to the display pins. With the display facing you and the 5 
 12 - hook up the orange wire (SCL)
 ```
 
-![4](pics/4.jpg)
+<img src="pics/4.jpg" width=500>
+
 ```
 Now hook up the other ends to the board
 Display 5V: Red cable to A27 (DISPLAY 5V -> MCU VCC)
@@ -103,7 +104,7 @@ Display SDA: Yellow cable to I26 (DISPLAY SDA -> MCU 2)
 Display SCL: Orange cable to I25 (DISPLAY SCL -> MCU 3)
 ```
 
-![5](pics/5.jpg)
+<img src="pics/5.jpg" width=500>
 ```
 
 Now plug in the USB cable (only) into the Belkin power plug. You should see the screen light up, say ONSEN TAMAGO PRO, and then 
@@ -117,7 +118,7 @@ The screen should turn red. The number on the right should be the temperature of
 If it doesn't, stop here and ask Brian
 ```
 
-![6](pics/6.jpg)
+<img src="pics/6.jpg" width=500>
 ```
 
 Now, take the white and black cables coming out of the PowerSSR Tail
