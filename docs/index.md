@@ -161,7 +161,7 @@ If you want an EXCELLENT EGG ready for you at 7 am, make sure the POWER CABLE is
  * SET: a medium cooked egg with a set yolk
  * SEPHARDIC: an egg that takes seven hours to cook! 
 
-The machine first WARMS the water to your chosen setting, then COOKS the egg for 45 minutes, then KEEPS the egg for 3 hours at a lower temperature. You can eat the egg anytime after it COOKS. You'll notice the rice cooker's power light turning on and off a lot-- this is totally normal and how it works to keep the right temperature!
+The machine first WARMS the water to your chosen setting, then COOKS the egg for 45 minutes (or 7 hours if SEPHARDIC), then KEEPS the egg for 3 hours at a lower temperature. You can eat the egg anytime after it COOKS. You'll notice the rice cooker's power light turning on and off a lot-- this is totally normal and how it works to keep the right temperature!
 
 If you want an EXCELLENT EGG RIGHT NOW, make sure your EGG TYPE is chosen and then press the UP button to start IMMEDIATELY instead of at 6:00 AM.
 
