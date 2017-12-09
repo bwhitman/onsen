@@ -60,7 +60,9 @@ There's a small resistor in the box. It looks like a tiny bulb between two metal
 
 ### Hook up jumper wires
 
-Now we need to connect the various PCBs to each other. We are going to run wires between parts that need to talk to each other. Any color or length wire is fine!
+Now we need to connect the various PCBs to each other. We are going to run wires between parts that need to talk to each other. 
+
+Any color or length wire is fine, but save the 4 wires that are stuck together for the next step. 
 
 **CLOCK**'s GND pin needs to be connected to **MCU**'s GND. That's a wire from G11 to I28.
 
