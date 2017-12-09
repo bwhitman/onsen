@@ -8,6 +8,16 @@ While this looks scary, the wires are all very low current and voltage. It shoul
 
 ## Assmembly Instructions
 
+### Safety lecture
+
+This is a safe thing, but always follow some simple rules to make sure you're _double safe_:
+
+ * Always keep the device unplugged while you're working on it. Don't have the USB cable or the Belkin thing plugged in until you're ready to test it. 
+ * Unplug the power and USB cables if you're moving it. 
+ * Don't touch any metal bits while the device is on. The buttons on the screen are safe to touch but don't move or touch any of the wires.
+ * Carefully watch during your first egg to make sure it's all working -- you want the rice cooker to reach its target temperature and not go too far over. 
+ * You want to make sure the temperature sensor is in the water at all times. 
+
 ### 1. Place the PCBs in the protoboard. 
 
 The white thing with all the holes is the "protoboard." It lets you make circuits without any soldering. Protoboards are especially handy because each row of 5 pins (two columns, one on each side) are all connected to each other. For example, pin # A1 is connected to B1, C1, D1, E1. And pin # F1 is connected to G1, H1, I1, J1. But F1 and A1 are not connected. And A1 and A2 are not connected. 
