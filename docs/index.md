@@ -2,8 +2,6 @@
 
 # Instructions
 
-![whole](pics/whole.jpg){:class="img-responsive" width="800px"}
-
 ## 1. Place the PCBs in the protoboard. 
 
 The white thing with all the holes is the "protoboard." It lets you make circuits without any soldering. Protoboards are especially handy because each row of 5 pins (two columns, one on each side) are all connected to each other. For example, pin # A1 is connected to B1, C1, D1, E1. And pin # F1 is connected to G1, H1, I1, J1. But F1 and A1 are not connected. And A1 and A2 are not connected. 
