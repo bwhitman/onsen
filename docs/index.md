@@ -51,7 +51,7 @@ and SQW is in H15
 ```
 
 
-![1](pics/1.jpg){:class="img-responsive" :width="500px"}
+![1](pics/1.jpg){:class="img-responsive" width="500px"}
 
 ```
 Temperature sensor
