@@ -1,15 +1,21 @@
 # Onsen Tamago Pro
 
-# Instructions
+Welcome to the wonderful world of automatic onsen eggs!
 
-## 1. Place the PCBs in the protoboard. 
+## A note for parents
+
+While this looks scary, the wires are all very low current and voltage. It should be no more dangerous than plugging an iPhone into a charger. The only bad part is safely encased in that big black "PowerSwitch Tail" box, which is screwed tightly shut and insulated. But of course, please watch carefully and help out: it does heat up water to really hot temperatures automatically. We've been using ours every day for 2 years now with no incidents, and the eggs are delicious. 
+
+## Assmembly Instructions
+
+### 1. Place the PCBs in the protoboard. 
 
 The white thing with all the holes is the "protoboard." It lets you make circuits without any soldering. Protoboards are especially handy because each row of 5 pins (two columns, one on each side) are all connected to each other. For example, pin # A1 is connected to B1, C1, D1, E1. And pin # F1 is connected to G1, H1, I1, J1. But F1 and A1 are not connected. And A1 and A2 are not connected. 
 
 There are three PCBs for Onsen Tamago Pro (OTP.) They are:
 
  * **MCU**, the microcontroller, labeled "Pro Micro." It is the brains of the operation: it tells the display what to say, monitors the temperature and controls the rice cooker.
- * **CLOCK**, the thing with the little battery in it. It maintains the time, even when OTP is off. 
+ * **CLOCK**, the thing with the little battery in it. It says RTC on it. It maintains the time, even when OTP is off. 
  * **DISPLAY**, the thing with the screen and buttons. 
 
 There's also three other parts:
@@ -28,7 +34,7 @@ It should look like this:
 
 ![1](pics/1.jpg){:class="img-responsive" width="800px"}
 
-## Hook up the temperature sensor
+### Hook up the temperature sensor
 
 **TEMP** has three wires coming out of it: red for voltage (5V, power), brown for ground (also written as GND, and acts as the relative "0" for voltage), and lastly a wire for data (which tells the **MCU** how hot it is.) Let's put those wires in the right place. 
 
@@ -38,11 +44,11 @@ Wire **TEMP**'s yellow cable to J1.
 
 Wire **TEMP**'s red cable to J4. 
 
-There's a small resistor in the box. It looks like a tiny bulb between two metal wires. (It may be poked into the protoboard for safe keeping in transit.) We need to wire up the resistor so that the temperatue sensor can talk the right voltage to **MCU**. Bend the resistor like a staple and put one metal wire in H1, and the other metal wire end in H4. We are adding the resistor between voltage and data of the sensor: if you remember, the protoboard connects across columns H and J.  Press the resistor all the way down. It should look like this:
+There's a small resistor in the box. It looks like a tiny bulb between two metal wires. (It may be poked into the protoboard for safe keeping in transit.) We need to wire up the resistor so that the temperature sensor can talk the right voltage to **MCU**. Bend the resistor like a staple and put one metal wire in H1, and the other metal wire end in H4. We are adding the resistor between voltage and data of the sensor: if you remember, the protoboard connects across columns H and J.  Press the resistor all the way down. It should look like this:
 
 ![2](pics/2.jpg){:class="img-responsive" width="800px"}
 
-## Hook up jumper wires
+### Hook up jumper wires
 
 Now we need to connect the various PCBs to each other. We are going to run wires between parts that need to talk to each other. Any color or length wire is fine!
 
@@ -62,7 +68,7 @@ Looks like this:
 
 ![3](pics/3.jpg){:class="img-responsive" width="800px"}
 
-## Wire the display
+### Wire the display
 
 In the box are 4 wires bundled together that have a poky bit on one end and a receptacle on the other. Let's use those to make a cable between the display and the **MCU**.
 
@@ -100,7 +106,7 @@ Like this:
 
 ![5](pics/5.jpg){:class="img-responsive" width="800px"}
 
-## Test the display, clock and temperature sensor.
+### Test the display, clock and temperature sensor.
 
 You've wired most of it up, so let's take a break and test.
 
@@ -116,7 +122,7 @@ If it did happen, _great!_. Now let's test the temperature sensor. Press the "up
 
 Unplug the USB cable from either end for your next and last step!
 
-## Wire up the rice cooker.
+### Wire up the rice cooker.
 
 The **COOKER** and **TAIL** need to be connected now. The **TAIL** has a big power plug in, and big power plug out, and then two small wires coming out of its side, one black, and one white. The small wires are the way the **MCU** tells the rice cooker to turn on and off. 
 
@@ -140,5 +146,33 @@ Now you're ready to make eggs!
 
 
 ![7](pics/7.jpg){:class="img-responsive" width="800px"}
+
+
+## Usage
+
+How to use the ONSEN TAMAGO PRO 🍳
+
+The only thing you need to cook an EXCELLENT EGG is (1) some water in the pot, (2) between ONE and SIX eggs in the pot, and that (3) BLACK WIRE that’s going through the top completely immersed in the WATER. That’s the TEMPERATURE SENSOR. Also (4) make sure the COOKER’s switch is pushed down, towards COOK and away from KEEP WARM.
+
+If you want an EXCELLENT EGG ready for you at 7 am, make sure the POWER CABLE is plugged into the wall. The screen should say what time it is now and also 6:00 AM (when it will start cooking.) You can choose your EGG TYPE: SAUCY, SUPPLE, SET or SEPHARDIC — by hitting the right and left ARROW KEYS under the screen. You can also choose OFF to not automatically cook at 6:00 AM.
+
+The machine first WARMS the water to your chosen setting, then COOKS the egg for 45 minutes, then KEEPS the egg for 3 hours at a lower temperature. You can eat the egg anytime after it COOKS.
+
+If you want an EXCELLENT EGG RIGHT NOW, make sure your EGG TYPE is chosen and then press the UP button to start IMMEDIATELY instead of at 6:00 AM.
+
+If you want to CANCEL the cooking, hit the DOWN button at any time.
+
+If the egg machine WORRIES you just pull the power cable out of the wall and it will not do anything.
+
+ENJOY YOUR EGGS
+
+## Expert mode
+
+If you'd like to make changes to the software of OTP, you can simply download the [Arduino software](https://www.arduino.cc/en/Main/Software), wire the USB cable from **MCU** to your computer, and make changes to the [source code](https://github.com/bwhitman/onsen/blob/master/onsen.ino). Set the Arduino board type to Pro Micro 5V, 16MHz. 
+
+
+
+
+
 
 
