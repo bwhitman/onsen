@@ -50,16 +50,19 @@ Put so that GND pin in H11
 and SQW is in H15
 ```
 
-!(pics/1.jpg)
+![1](pics/1.jpg)
 
+```
 Temperature sensor
 Brown cable to GND - j28
 Yellow cable to J1
 Red cable to J4
 Resistor goes from H1 to H4, either direction. Press all the way down.
+```
 
-[pic]
+![2](pics/2.jpg)
 
+```
 Hookup wires
 
 RTC GND: G11 - I28 (RTC GND -> MCU GND) 
@@ -68,8 +71,11 @@ RTC SDA: G13 - J26 (RTC SDA -> MCU 2)
 RTC SCL: G14 - J25 (RTC SCL -> MCU 3)
 TEMP DATA: G1 - J24 (TEMP DATA -> MCU 4)
 TEMP 5V: G4 - F12 (TEMP 5V -> RTC 5V)
-[pic]
+```
 
+![3](pics/3.jpg)
+
+```
 Display
 Use the 4 female to male wire (orgnge, yellow, red, brown)
 Hook the female ends to the display pins. With the display facing you and the 5 buttons on the bottom left, count the pins from the left:
@@ -86,16 +92,19 @@ Hook the female ends to the display pins. With the display facing you and the 5 
 10 - don't connect
 11 - hook up the yellow wire (SDA)
 12 - hook up the orange wire (SCL)
+```
 
-[pic]
-
+![4](pics/4.jpg)
+```
 Now hook up the other ends to the board
 Display 5V: Red cable to A27 (DISPLAY 5V -> MCU VCC)
 Display GND: Brown cable to A29 (DISPLAY GND -> MCU GND)
 Display SDA: Yellow cable to I26 (DISPLAY SDA -> MCU 2)
 Display SCL: Orange cable to I25 (DISPLAY SCL -> MCU 3)
+```
 
-[pic]
+![5](pics/5.jpg)
+```
 
 Now plug in the USB cable (only) into the Belkin power plug. You should see the screen light up, say ONSEN TAMAGO PRO, and then 
 PRESET: (the current time)
@@ -106,8 +115,10 @@ If not, stop here and ask Brian
 If so, try hitting the "up" arrow key (in the 4 keys that look like an arrow under the screen.)
 The screen should turn red. The number on the right should be the temperature of the sensor, in celsius. Hold it in your hand or breathe on it to get it to go up.
 If it doesn't, stop here and ask Brian
+```
 
-[pic]
+![6](pics/6.jpg)
+```
 
 Now, take the white and black cables coming out of the PowerSSR Tail
 White: J23 (TAIL -> MCU pin 5)
