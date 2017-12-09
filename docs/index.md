@@ -156,7 +156,12 @@ The only thing you need to cook an EXCELLENT EGG is (1) some water in the pot, (
 
 If you want an EXCELLENT EGG ready for you at 7 am, make sure the POWER CABLE is plugged into the wall. The screen should say what time it is now and also 6:00 AM (when it will start cooking.) You can choose your EGG TYPE: SAUCY, SUPPLE, SET or SEPHARDIC — by hitting the right and left ARROW KEYS under the screen. You can also choose OFF to not automatically cook at 6:00 AM.
 
-The machine first WARMS the water to your chosen setting, then COOKS the egg for 45 minutes, then KEEPS the egg for 3 hours at a lower temperature. You can eat the egg anytime after it COOKS.
+ * SAUCY: a soft cooked egg where the yolk will be runny, yum
+ * SUPPLE: a soft cooked egg where the yolk will be firmer but still soft, yum
+ * SET: a medium cooked egg with a set yolk
+ * SEPHARDIC: an egg that takes seven hours to cook! 
+
+The machine first WARMS the water to your chosen setting, then COOKS the egg for 45 minutes, then KEEPS the egg for 3 hours at a lower temperature. You can eat the egg anytime after it COOKS. You'll notice the rice cooker's power light turning on and off a lot-- this is totally normal and how it works to keep the right temperature!
 
 If you want an EXCELLENT EGG RIGHT NOW, make sure your EGG TYPE is chosen and then press the UP button to start IMMEDIATELY instead of at 6:00 AM.
 
