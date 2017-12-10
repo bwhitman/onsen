@@ -34,9 +34,11 @@ While this looks scary, the wires are all very low current and voltage. It shoul
 
 The protoboard lets you make electrical circuits without any soldering. Protoboards are especially handy because each row of 5 pins (two columns, one on each side) are all connected to each other: without a wire, two adjacent pins can talk to each other. For example, pin # A1 talks to to B1, C1, D1, E1. And pin # F1 talks to to G1, H1, I1, J1. But F1 and A1 are not connected: they don't talk to each other without a wire. And A1 and A2 are not connected. In the picture below, those green lines mean the pins talk to each other without needing a wire!
 
+
 ![proto](pics/proto.png){:class="img-responsive" width="400px"}
 
 I will give you explicit instructions on where to place things by naming the pin number, for example, A1 is the pin on the protoboard that is in column A and row 1 as labeled on the board. This makes it real easy to put everything together. But! After you successfully get it working, you will realize you can place the parts almost anywhere, to make it look nicer or use different wires, make it fit better in a case, etc. Feel free to change the positions of everything!
+
 
 Each of the three parts (**MCU**, **DISPLAY** and **CLOCK**) has already been assembled and all you need to do is wire them up together! Let's start with **MCU**.
 
@@ -130,15 +132,17 @@ Plug the Belkin power strip into a wall or extension cable. Don't plug anything 
 
 The screen should light up saying "Onsen Tamago Pro"! After a few seconds, it should show a clock, the current preset, and the start time. The clock should be correct and moving. 
 
-If this **doesn't** happen, stop, check your work, and if it is still not working, give Brian a call. 
+If this **doesn't** happen, stop, check that the connections are right, and if it is still not working, give Brian a call. 
 
-If it did happen, _great!_. Now let's test the temperature sensor. Press the "up" arrow button on the 4-way button pad. The screen should turn red, say "Heating", and the number on the right should be showing the current temperature the sensor is detecting, in celsius. If it is just laying on the table, it should say 22 or so. Hold it in your hand or breathe on it that number should slowly go up. If that works, _great!_. If it doesn't, or the temperature says 85 or 0 or something weird, stop, check your work and call Brian.
+If it did happen, _great!_. Now let's test the temperature sensor. Press the "up" arrow button on the 4-way button pad. The screen should turn red, say "Heating", and the number on the right should be showing the current temperature the sensor is detecting, in celsius. If it is just laying on the table, it should say 22 or so. Hold it in your hand or breathe on it that number should slowly go up. If that works, _great!_. If it doesn't, or the temperature says 85 or 0 or something weird, stop, check your connections again!
 
 ![6](pics/6.jpg){:class="img-responsive" width="800px"}
 
 Unplug the USB cable from either end for your next and last step!
 
 ### Step 6: Wire up the rice cooker.
+
+I know the board is getting a little crowded, but we just have two more wires to put in there!
 
 The **COOKER** and **TAIL** need to be connected now. The **TAIL** has a big power plug in, and big power plug out, and then two small wires coming out of its side, one black, and one white. The small wires are the way the **MCU** tells the rice cooker to turn on and off. 
 
@@ -162,7 +166,7 @@ Now you're ready to make eggs!
 
 ![7](pics/7.jpg){:class="img-responsive" width="800px"}
 
-I bet you could make a really cool box for the Onsen Tamago Pro, out of cardboard or wood or even a shoebox you have lying around! Just make sure to unplug the power and USB before moving it around. 
+I bet you could make a really cool box for the Onsen Tamago Pro, out of cardboard or wood or even a shoebox you have lying around! Just make sure to unplug the power and USB whenever you're working on it.
 
 ## Usage
 
