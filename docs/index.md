@@ -5,7 +5,22 @@ Welcome to the wonderful world of automatic onsen eggs!
 
 ## Assmembly Instructions
 
-### Safety lecture
+It takes 6 steps to put together the Onsen Tamago Pro (OTP.) It should take you 20 minutes or so. No tools are needed! Let's first make sure you have everything laid out:
+
+ * **MCU**, the microcontroller, labeled "Pro Micro." It is the brains of the operation: it tells the display what to say, monitors the temperature and controls the rice cooker.
+ * **CLOCK**, the thing with the little battery in it. It says RTC on it. It maintains the time, even when OTP is off. 
+ * **DISPLAY**, the thing with the screen and buttons. 
+ * **COOKER**, the rice cooker.
+ * **TAIL**, the "PowerSwitch Tail," which handles all the dangerous voltages so you never have to. It turns the rice cooker on and off.
+ * **TEMP**, the temperature sensor. That's the long cable with the metal end and the three wires at the other end. It goes in the water.
+ * A protoboard, a white piece of plastic with lots of holes in it.
+ * A bunch of different colored male-to-male jumper wires (pokey metal bits on each end) 
+ * 4 bound together female-male jumper wires for the display (pokey metal on one end, receptacle on the other)
+ * A single 4.7Kohm **RESISTOR**, looks like a small brown bulb between two metal wires. This may be stuck in the protoboard for safe keeping, pull it out before beginning!
+ * A Belkin power strip that has USB and AC power plug in. Keep this unplugged for now.
+ * A black micro-USB cable.
+
+### A note about safety
 
 While this looks scary, the wires are all very low current and voltage. It should be no more dangerous than plugging an iPhone into a charger. The only bad part is safely encased in that big black "PowerSwitch Tail" box, which is screwed tightly shut and insulated. But of course, please watch carefully: it does heat up water to really hot temperatures automatically. We've been using ours every day for 2 years now with no incidents, and the eggs are delicious. This is a safe thing, but always follow some simple rules to make sure you're _double safe_:
 
@@ -13,29 +28,17 @@ While this looks scary, the wires are all very low current and voltage. It shoul
  * Unplug the power and USB cables if you're moving it. 
  * Don't touch any metal bits while the device is on. The buttons on the screen are safe to touch but don't move or touch any of the wires.
  * Carefully watch during your first egg to make sure it's all working -- you want the rice cooker to reach its target temperature and not go too far over. 
- * You want to make sure the temperature sensor is in the water at all times. 
+ * While using it, you want to make sure the temperature sensor is in the water at all times. If the temperature sensor falls out, the rice cooker will keep cooking until it boils the water, making for a bad egg! (It will shut itself off eventually if this happens, don't worry.) In normal use the temperature will be too hot to touch but not boiling.
 
-### Place the PCBs in the protoboard. 
+### Step 1: Place the PCBs in the protoboard
 
-The white thing with all the holes is the "protoboard." It lets you make circuits without any soldering. Protoboards are especially handy because each row of 5 pins (two columns, one on each side) are all connected to each other. For example, pin # A1 is connected to B1, C1, D1, E1. And pin # F1 is connected to G1, H1, I1, J1. But F1 and A1 are not connected. And A1 and A2 are not connected. 
+The protoboard It lets you make circuits without any soldering. Protoboards are especially handy because each row of 5 pins (two columns, one on each side) are all connected to each other. For example, pin # A1 is connected to B1, C1, D1, E1. And pin # F1 is connected to G1, H1, I1, J1. But F1 and A1 are not connected. And A1 and A2 are not connected. 
 
 ![proto](pics/proto.png){:class="img-responsive" width="800px"}
 
 Throughout the instructions I will give you explicit instructions on where to place things by naming the pin number, for example, A1 is the pin on the protoboard that is in column A and row 1 as labeled on the board. This makes it real easy to put everything together. But! After you successfully get it working, you will realize you can place the parts almost anywhere, to make it look nicer or use different wires, etc. Feel free to change the positions of everything!
 
-There are three PCBs for Onsen Tamago Pro (OTP.) They are:
-
- * **MCU**, the microcontroller, labeled "Pro Micro." It is the brains of the operation: it tells the display what to say, monitors the temperature and controls the rice cooker.
- * **CLOCK**, the thing with the little battery in it. It says RTC on it. It maintains the time, even when OTP is off. 
- * **DISPLAY**, the thing with the screen and buttons. 
-
-There's also three other parts:
-
- * **COOKER**, the rice cooker.
- * **TAIL**, the "PowerSwitch Tail," which handles all the dangerous voltages so you never have to. It turns the rice cooker on and off.
- * **TEMP**, the temperature sensor. That's the long cable with the metal end and the three wires at the other end. It goes in the water.
-
-Each PCB has already been assembled and all you need to do is wire them up together! Let's start with **MCU**.
+Each of the three PCBs (**MCU**, **DISPLAY** and **CLOCK**) has already been assembled and all you need to do is wire them up together! Let's start with **MCU**.
 
 Put the **MCU** on the board so that the USB jack is facing down, towards row 30. You want the right column of pins on **MCU** all up and down column G, and the left column along column C. Press until it's completely flush with the board. For example, the RAW pin on **MCU** should be seated in pin C30, and Pin 9 of **MCU** should be seated in pin G19. 
 
@@ -45,7 +48,7 @@ It should look like this:
 
 ![1](pics/1.jpg){:class="img-responsive" width="800px"}
 
-### Hook up the temperature sensor
+### Step 2: Hook up the temperature sensor
 
 **TEMP** has three wires coming out of it: red for voltage (5V, power), brown for ground (also written as GND, and acts as the relative "0" for voltage), and lastly a wire for data (which tells the **MCU** how hot it is.) Let's put those wires in the right place. 
 
@@ -55,11 +58,11 @@ Wire **TEMP**'s yellow cable to J1.
 
 Wire **TEMP**'s red cable to J4. 
 
-There's a small resistor in the box. It looks like a tiny bulb between two metal wires. (It may be poked into the protoboard for safe keeping in transit.) We need to wire up the resistor so that the temperature sensor can talk the right voltage to **MCU**. Bend the resistor like a staple and put one metal wire in H1, and the other metal wire end in H4. We are adding the resistor between voltage and data of the sensor: if you remember, the protoboard connects across columns H and J.  Press the resistor all the way down. It should look like this:
+We now need to wire up the **RESISTOR** so that the temperature sensor can talk the right voltage to **MCU**. Bend the resistor like a staple and put one metal wire in H1, and the other metal wire end in H4. We are adding the resistor between voltage and data of the sensor: if you remember, the protoboard connects across columns H and J.  Press the resistor all the way down. It should look like this:
 
 ![2](pics/2.jpg){:class="img-responsive" width="800px"}
 
-### Hook up jumper wires
+### Step 3: Hook up jumper wires
 
 Now we need to connect the various PCBs to each other. We are going to run wires between parts that need to talk to each other. 
 
@@ -81,7 +84,7 @@ Looks like this:
 
 ![3](pics/3.jpg){:class="img-responsive" width="800px"}
 
-### Wire the display
+### Step 4: Wire the display
 
 In the box are 4 wires bundled together that have a poky bit on one end and a receptacle on the other. Let's use those to make a cable between the display and the **MCU**.
 
@@ -119,7 +122,7 @@ Like this:
 
 ![5](pics/5.jpg){:class="img-responsive" width="800px"}
 
-### Test the display, clock and temperature sensor.
+### Step 5: Test the display, clock and temperature sensor.
 
 You've wired most of it up, so let's take a break and test.
 
@@ -135,7 +138,7 @@ If it did happen, _great!_. Now let's test the temperature sensor. Press the "up
 
 Unplug the USB cable from either end for your next and last step!
 
-### Wire up the rice cooker.
+### Step 6: Wire up the rice cooker.
 
 The **COOKER** and **TAIL** need to be connected now. The **TAIL** has a big power plug in, and big power plug out, and then two small wires coming out of its side, one black, and one white. The small wires are the way the **MCU** tells the rice cooker to turn on and off. 
 
@@ -157,9 +160,9 @@ Plug in the Belkin and the screen should turn on.
 
 Now you're ready to make eggs!
 
-
 ![7](pics/7.jpg){:class="img-responsive" width="800px"}
 
+I bet you could make a really cool box for the Onsen Tamago Pro, out of cardboard or wood or even a shoebox you have lying around! Just make sure to unplug the power and USB before moving it around. 
 
 ## Usage
 
