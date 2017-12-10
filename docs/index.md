@@ -5,7 +5,7 @@ Welcome to the wonderful world of automatic onsen eggs!
 
 ## Assmembly Instructions
 
-It takes 6 steps to put together the Onsen Tamago Pro (OTP.) It should take you 30 minutes or so. No tools are needed! Let's first make sure you have everything laid out:
+It takes 6 steps to put together the Onsen Tamago Pro (OTP.) No tools are needed! Let's first make sure you have everything laid out:
 
  * **MCU**, the microcontroller, labeled "Pro Micro." It is the brains of the operation: it tells the display what to say, monitors the temperature and controls the rice cooker.
  * **CLOCK**, the thing with the little battery in it. It says RTC on it. It maintains the time, even when OTP is off. 
@@ -40,7 +40,7 @@ I will give you explicit instructions on where to place things by naming the pin
 
 Each of the three parts (**MCU**, **DISPLAY** and **CLOCK**) has already been assembled and all you need to do is wire them up together! Let's start with **MCU**.
 
-Put the **MCU** on the board so that the USB jack is facing down, towards row 30. You want the right column of pins on **MCU** all up and down column G, and the left column along column C. Press until it's completely flat on the board, the pins should go all the way in. For example, the RAW pin on **MCU** should be seated in pin C30, and Pin 9 of **MCU** should be seated in pin G19. 
+Put the **MCU** on the board so that the USB jack is facing down, towards row 30. You want the right column of pins on **MCU** all up and down column G, and the left column all up and down column C. Press until it's completely flat on the board, the pins should go all the way in. For example, the RAW pin on **MCU** should be seated in pin C30, and Pin 9 of **MCU** should be seated in pin G19. 
 
 Put **CLOCK** on the board so that its GND pin is in pin H11, and SQW is in pin H15.
 
