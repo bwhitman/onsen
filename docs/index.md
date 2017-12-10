@@ -5,7 +5,7 @@ Welcome to the wonderful world of automatic onsen eggs!
 
 ## Assmembly Instructions
 
-It takes 6 steps to put together the Onsen Tamago Pro (OTP.) It should take you 20 minutes or so. No tools are needed! Let's first make sure you have everything laid out:
+It takes 6 steps to put together the Onsen Tamago Pro (OTP.) It should take you 30 minutes or so. No tools are needed! Let's first make sure you have everything laid out:
 
  * **MCU**, the microcontroller, labeled "Pro Micro." It is the brains of the operation: it tells the display what to say, monitors the temperature and controls the rice cooker.
  * **CLOCK**, the thing with the little battery in it. It says RTC on it. It maintains the time, even when OTP is off. 
@@ -34,9 +34,9 @@ While this looks scary, the wires are all very low current and voltage. It shoul
 
 The protoboard lets you make circuits without any soldering. Protoboards are especially handy because each row of 5 pins (two columns, one on each side) are all connected to each other. For example, pin # A1 is connected to B1, C1, D1, E1. And pin # F1 is connected to G1, H1, I1, J1. But F1 and A1 are not connected. And A1 and A2 are not connected. 
 
-![proto](pics/proto.png){:class="img-responsive" width="800px"}
+![proto](pics/proto.png){:class="img-responsive" width="400px"}
 
-Throughout the instructions I will give you explicit instructions on where to place things by naming the pin number, for example, A1 is the pin on the protoboard that is in column A and row 1 as labeled on the board. This makes it real easy to put everything together. But! After you successfully get it working, you will realize you can place the parts almost anywhere, to make it look nicer or use different wires, make it fit better in a case, etc. Feel free to change the positions of everything!
+I will give you explicit instructions on where to place things by naming the pin number, for example, A1 is the pin on the protoboard that is in column A and row 1 as labeled on the board. This makes it real easy to put everything together. But! After you successfully get it working, you will realize you can place the parts almost anywhere, to make it look nicer or use different wires, make it fit better in a case, etc. Feel free to change the positions of everything!
 
 Each of the three PCBs (**MCU**, **DISPLAY** and **CLOCK**) has already been assembled and all you need to do is wire them up together! Let's start with **MCU**.
 
