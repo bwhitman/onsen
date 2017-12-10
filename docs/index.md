@@ -18,7 +18,7 @@ This is a safe thing, but always follow some simple rules to make sure you're _d
  * Carefully watch during your first egg to make sure it's all working -- you want the rice cooker to reach its target temperature and not go too far over. 
  * You want to make sure the temperature sensor is in the water at all times. 
 
-### 1. Place the PCBs in the protoboard. 
+### Place the PCBs in the protoboard. 
 
 The white thing with all the holes is the "protoboard." It lets you make circuits without any soldering. Protoboards are especially handy because each row of 5 pins (two columns, one on each side) are all connected to each other. For example, pin # A1 is connected to B1, C1, D1, E1. And pin # F1 is connected to G1, H1, I1, J1. But F1 and A1 are not connected. And A1 and A2 are not connected. 
 
@@ -112,7 +112,7 @@ Wire the brown cable (GND) to **MCU**'s GND. That brown to A29.
 
 Wire the yellow cable (SDA) to **MCU**'s SDA / Pin 2. That's yellow to I26.
 
-Wire the orange cable (SCL) to **MCU**'s SCL / Pin 3. Thats yellow to I25.
+Wire the orange cable (SCL) to **MCU**'s SCL / Pin 3. Thats orange to I25.
 
 Like this:
 
