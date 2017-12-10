@@ -23,6 +23,7 @@ The white thing with all the holes is the "protoboard." It lets you make circuit
 
 ![proto](pics/proto.png){:class="img-responsive" width="800px"}
 
+Throughout the instructions I will give you explicit instructions on where to place things by naming the pin number, for example, A1 is the pin on the protoboard that is in column A and row 1 as labeled on the board. This makes it real easy to put everything together. But! After you successfully get it working, you will realize you can place the parts almost anywhere, to make it look nicer or use different wires, etc. Feel free to change the positions of everything!
 
 There are three PCBs for Onsen Tamago Pro (OTP.) They are:
 
@@ -70,9 +71,9 @@ Any color or length wire is fine, but save the 4 wires that are stuck together f
 
 **CLOCK**'s 5V pin needs to be connected to **MCU**'s VCC. That's a wire from G12 to B27.
 
-**CLOCK**'s SDA pin needs to be connected to **MCU**'s SDA pin 2. That's a wire from G13 to J26.
+**CLOCK**'s SDA pin needs to be connected to **MCU**'s SDA, which is on its pin 2. That's a wire from G13 to J26.
 
-**CLOCK**'s SCL pin needs to be connected to **MCU**'s SCL pin 3. That's a wire from G14 to J25.
+**CLOCK**'s SCL pin needs to be connected to **MCU**'s SCL, which is on its pin 3. That's a wire from G14 to J25.
 
 **TEMP**'s data pin needs to be connected to **MCU**'s pin 4. That's a wire from G1 to J24.
 
