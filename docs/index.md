@@ -2,13 +2,12 @@
 
 Welcome to the wonderful world of automatic onsen eggs!
 
-## A note for parents
-
-While this looks scary, the wires are all very low current and voltage. It should be no more dangerous than plugging an iPhone into a charger. The only bad part is safely encased in that big black "PowerSwitch Tail" box, which is screwed tightly shut and insulated. But of course, please watch carefully and help out: it does heat up water to really hot temperatures automatically. We've been using ours every day for 2 years now with no incidents, and the eggs are delicious. 
 
 ## Assmembly Instructions
 
 ### Safety lecture
+
+While this looks scary, the wires are all very low current and voltage. It should be no more dangerous than plugging an iPhone into a charger. The only bad part is safely encased in that big black "PowerSwitch Tail" box, which is screwed tightly shut and insulated. But of course, please watch carefully and help out: it does heat up water to really hot temperatures automatically. We've been using ours every day for 2 years now with no incidents, and the eggs are delicious. 
 
 This is a safe thing, but always follow some simple rules to make sure you're _double safe_:
 
@@ -21,6 +20,9 @@ This is a safe thing, but always follow some simple rules to make sure you're _d
 ### Place the PCBs in the protoboard. 
 
 The white thing with all the holes is the "protoboard." It lets you make circuits without any soldering. Protoboards are especially handy because each row of 5 pins (two columns, one on each side) are all connected to each other. For example, pin # A1 is connected to B1, C1, D1, E1. And pin # F1 is connected to G1, H1, I1, J1. But F1 and A1 are not connected. And A1 and A2 are not connected. 
+
+![proto](pics/proto.png){:class="img-responsive" width="800px"}
+
 
 There are three PCBs for Onsen Tamago Pro (OTP.) They are:
 
