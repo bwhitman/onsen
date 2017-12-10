@@ -14,8 +14,8 @@ It takes 6 steps to put together the Onsen Tamago Pro (OTP.) It should take you 
  * **TAIL**, the "PowerSwitch Tail," which handles all the dangerous voltages so you never have to. It turns the rice cooker on and off.
  * **TEMP**, the temperature sensor. That's the long cable with the metal end and the three wires at the other end. It goes in the water.
  * A protoboard, a white piece of plastic with lots of holes in it.
- * A bunch of different colored male-to-male jumper wires (pokey metal bits on each end) 
- * 4 bound together female-male jumper wires for the display (pokey metal on one end, receptacle on the other)
+ * 10 different colored male-to-male jumper wires (pokey metal bits on each end) -- you won't need all of them!
+ * A multi-colored (red, brown, yellow, orange) female-male jumper wire for the display (pokey metal on one end, receptacle on the other)
  * A single 4.7Kohm **RESISTOR**, looks like a small brown bulb between two metal wires. This may be stuck in the protoboard for safe keeping, pull it out before beginning!
  * A Belkin power strip that has USB and AC power plug in. Keep this unplugged for now.
  * A black micro-USB cable.
