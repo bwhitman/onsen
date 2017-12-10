@@ -7,9 +7,7 @@ Welcome to the wonderful world of automatic onsen eggs!
 
 ### Safety lecture
 
-While this looks scary, the wires are all very low current and voltage. It should be no more dangerous than plugging an iPhone into a charger. The only bad part is safely encased in that big black "PowerSwitch Tail" box, which is screwed tightly shut and insulated. But of course, please watch carefully and help out: it does heat up water to really hot temperatures automatically. We've been using ours every day for 2 years now with no incidents, and the eggs are delicious. 
-
-This is a safe thing, but always follow some simple rules to make sure you're _double safe_:
+While this looks scary, the wires are all very low current and voltage. It should be no more dangerous than plugging an iPhone into a charger. The only bad part is safely encased in that big black "PowerSwitch Tail" box, which is screwed tightly shut and insulated. But of course, please watch carefully: it does heat up water to really hot temperatures automatically. We've been using ours every day for 2 years now with no incidents, and the eggs are delicious. This is a safe thing, but always follow some simple rules to make sure you're _double safe_:
 
  * Always keep the device unplugged while you're working on it. Don't have the USB cable or the Belkin thing plugged in until you're ready to test it. 
  * Unplug the power and USB cables if you're moving it. 
