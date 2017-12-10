@@ -42,7 +42,7 @@ Each of the three parts (**MCU**, **DISPLAY** and **CLOCK**) has already been as
 
 Put the **MCU** on the board so that the USB jack is facing down, towards row 30. You want the right column of pins on **MCU** all up and down column G, and the left column all up and down column C. Press until it's completely flat on the board, the pins should go all the way in. For example, the RAW pin on **MCU** should be seated in pin C30, and Pin 9 of **MCU** should be seated in pin G19. 
 
-Put **CLOCK** on the board so that its GND pin is in pin H11, and SQW is in pin H15.
+Put **CLOCK** on the board up and down column H, so that its GND pin is in pin H11, and SQW is in pin H15.
 
 It should look like this:
 
@@ -50,7 +50,7 @@ It should look like this:
 
 ### Step 2: Hook up the temperature sensor
 
-**TEMP** has three wires coming out of it: red for voltage (5V, power), brown for ground (also written as GND, and acts as the relative "0" for voltage), and lastly a wire for data (which tells the **MCU** how hot it is.) Let's put those wires in the right place. 
+**TEMP** has three wires coming out of it: red for voltage (5V, power), brown for ground (also written as GND, sort of "0" voltage), and lastly a wire for computer data (which tells the **MCU** how hot it is.) Let's put those wires in the right place. 
 
 Wire **TEMP**'s brown cable (GND) to pin J28 (**MCU**'s GND.)
 
@@ -58,27 +58,27 @@ Wire **TEMP**'s yellow cable to J1.
 
 Wire **TEMP**'s red cable to J4. 
 
-We now need to wire up the **RESISTOR** so that the temperature sensor can talk the right voltage to **MCU**. Bend the resistor like a staple and put one metal wire in H1, and the other metal wire end in H4. We are adding the resistor between voltage and data of the sensor: if you remember, the protoboard connects across columns H and J.  Press the resistor all the way down. It should look like this:
+We now need to wire up the **RESISTOR** so that the temperature sensor can talk the right voltage to **MCU**. If you remember, the protoboard talks across columns H and J without wires. You're adding a resistor between the computer data line and the voltage from **TEMP**.
+
+Bend the resistor like a staple shape with two wire legs. Put one metal leg in H1, and the other metal leg in H4. We are adding the resistor between voltage and data of the sensor:   Press the resistor all the way down. It should look like this:
 
 ![2](pics/2.jpg){:class="img-responsive" width="800px"}
 
 ### Step 3: Hook up jumper wires
 
-Now we need to connect the various PCBs to each other. We are going to run wires between parts that need to talk to each other. 
+Now we need to connect the various parts to each other. We are going to run wires between parts that need to talk to each other. We'll use the pile of single wires for this step. Any color or length wire is fine, but save the multi-colored group of wires that are stuck together for the next step. 
 
-Any color or length wire is fine, but save the 4 wires that are stuck together for the next step. 
+Wire from G11 to I28. (**CLOCK**'s GND pin needs to be connected to **MCU**'s GND.)
 
-**CLOCK**'s GND pin needs to be connected to **MCU**'s GND. That's a wire from G11 to I28.
+Wire from G12 to B27. (**CLOCK**'s 5V pin needs to be connected to **MCU**'s VCC.)
 
-**CLOCK**'s 5V pin needs to be connected to **MCU**'s VCC. That's a wire from G12 to B27.
+Wire from G13 to J26. (**CLOCK**'s SDA pin needs to be connected to **MCU**'s SDA, which is on its pin 2)
 
-**CLOCK**'s SDA pin needs to be connected to **MCU**'s SDA, which is on its pin 2. That's a wire from G13 to J26.
+Wire from G14 to J25. (**CLOCK**'s SCL pin needs to be connected to **MCU**'s SCL, which is on its pin 3.)
 
-**CLOCK**'s SCL pin needs to be connected to **MCU**'s SCL, which is on its pin 3. That's a wire from G14 to J25.
+Wire from G1 to J24. (**TEMP**'s data pin needs to be connected to **MCU**'s pin 4.)
 
-**TEMP**'s data pin needs to be connected to **MCU**'s pin 4. That's a wire from G1 to J24.
-
-**TEMP**'s voltage pin needs to be connected to 5V, so we'll tap into **CLOCK**'s voltage. That's G4 to F12.
+Wire from G4 to F12. (**TEMP**'s voltage pin needs to be connected to 5V, so we'll tap into **CLOCK**'s voltage.)
 
 Looks like this:
 
@@ -86,7 +86,7 @@ Looks like this:
 
 ### Step 4: Wire the display
 
-In the box are 4 wires bundled together that have a poky bit on one end and a receptacle on the other. Let's use those to make a cable between the display and the **MCU**.
+Let's now use that 4 mutli-colored wire to make a cable between the display and the **MCU**.
 
 Hold the display facing you, with the 5 buttons (arrow + select) facing on the bottom left. Count the pins on the bottom from the left and wire them like so.
 
@@ -110,13 +110,13 @@ Like this:
 
 Now hook the other ends of those 4 wires to the right spots on the **MCU**:
 
-Wire the red cable (5V) to **MCU**'s VCC pin. That's red to A27.
+Wire the red cable into A27. (5V to **MCU**'s VCC pin.)
 
-Wire the brown cable (GND) to **MCU**'s GND. That brown to A29.
+Wire the brown cable into A29. (GND to **MCU**'s GND.)
 
-Wire the yellow cable (SDA) to **MCU**'s SDA / Pin 2. That's yellow to I26.
+Wire the yellow cable to I26. (SDA to **MCU**'s SDA / Pin 2.)
 
-Wire the orange cable (SCL) to **MCU**'s SCL / Pin 3. Thats orange to I25.
+Wire the orange cable to I25. (SCL to **MCU**'s SCL / Pin 3.)
 
 Like this:
 
