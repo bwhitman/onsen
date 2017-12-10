@@ -32,11 +32,11 @@ While this looks scary, the wires are all very low current and voltage. It shoul
 
 ### Step 1: Place the PCBs in the protoboard
 
-The protoboard It lets you make circuits without any soldering. Protoboards are especially handy because each row of 5 pins (two columns, one on each side) are all connected to each other. For example, pin # A1 is connected to B1, C1, D1, E1. And pin # F1 is connected to G1, H1, I1, J1. But F1 and A1 are not connected. And A1 and A2 are not connected. 
+The protoboard lets you make circuits without any soldering. Protoboards are especially handy because each row of 5 pins (two columns, one on each side) are all connected to each other. For example, pin # A1 is connected to B1, C1, D1, E1. And pin # F1 is connected to G1, H1, I1, J1. But F1 and A1 are not connected. And A1 and A2 are not connected. 
 
 ![proto](pics/proto.png){:class="img-responsive" width="800px"}
 
-Throughout the instructions I will give you explicit instructions on where to place things by naming the pin number, for example, A1 is the pin on the protoboard that is in column A and row 1 as labeled on the board. This makes it real easy to put everything together. But! After you successfully get it working, you will realize you can place the parts almost anywhere, to make it look nicer or use different wires, etc. Feel free to change the positions of everything!
+Throughout the instructions I will give you explicit instructions on where to place things by naming the pin number, for example, A1 is the pin on the protoboard that is in column A and row 1 as labeled on the board. This makes it real easy to put everything together. But! After you successfully get it working, you will realize you can place the parts almost anywhere, to make it look nicer or use different wires, make it fit better in a case, etc. Feel free to change the positions of everything!
 
 Each of the three PCBs (**MCU**, **DISPLAY** and **CLOCK**) has already been assembled and all you need to do is wire them up together! Let's start with **MCU**.
 
@@ -126,11 +126,11 @@ Like this:
 
 You've wired most of it up, so let's take a break and test.
 
-Plug the Belkin power strip into a wall or extension cable. Don't plug anything into its power plug, but plug the USB cable from it into the **MCU**'s USB port. 
+Plug the Belkin power strip into a wall or extension cable. Don't plug anything into its power input plug, but plug the USB cable from it into the **MCU**'s USB port. 
 
-The screen should light up saying "Onsen Tamago Pro"! After a few seconds, it should show a clock, the current preset, and the start time. The clock should be correct and moving.
+The screen should light up saying "Onsen Tamago Pro"! After a few seconds, it should show a clock, the current preset, and the start time. The clock should be correct and moving. 
 
-If this **doesn't** happen, stop, check your work, and give Brian a call. 
+If this **doesn't** happen, stop, check your work, and if it is still not working, give Brian a call. 
 
 If it did happen, _great!_. Now let's test the temperature sensor. Press the "up" arrow button on the 4-way button pad. The screen should turn red, say "Heating", and the number on the right should be showing the current temperature the sensor is detecting, in celsius. If it is just laying on the table, it should say 22 or so. Hold it in your hand or breathe on it that number should slowly go up. If that works, _great!_. If it doesn't, or the temperature says 85 or 0 or something weird, stop, check your work and call Brian.
 
@@ -154,9 +154,9 @@ Run the **TEMP** sensor through that hole in top of **COOKER**. There's a little
 
 Make sure the **COOKER**'s "WARM/COOK" switch is pushed down. 
 
-Make sure the USB cable is plugged into the Belkin power strip and the other end into the **MCU**.
+Plug the USB cable into the Belkin power strip and the other end into the **MCU**.
 
-Plug in the Belkin and the screen should turn on.
+Plug in the Belkin into wall power and the screen should turn on.
 
 Now you're ready to make eggs!
 
