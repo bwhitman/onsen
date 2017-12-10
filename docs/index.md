@@ -88,7 +88,7 @@ Looks like this:
 
 Let's now use that 4 mutli-colored wire to make a cable between the display and the **MCU**.
 
-Hold the display facing you, with the 5 buttons (arrow + select) facing on the bottom left. Count the pins on the bottom from the left and wire them like so.
+Hold the display facing you, with the 5 buttons (arrow + select) facing on the bottom left. Count the pins on the bottom from the left and plug them into the mutli-colored wire:
 
  1. Don't connect
  2. Don't connect
@@ -100,7 +100,7 @@ Hold the display facing you, with the 5 buttons (arrow + select) facing on the b
  8. Don't connect
  9. Don't connect
  10. Don't connect
- 11. Dont' connect
+ 11. Don't connect
  12. Hook up the yellow wire (SDA)
  13. Hook up the orange wire (SCL)
 
