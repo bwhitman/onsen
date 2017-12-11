@@ -1,6 +1,6 @@
 # Onsen Tamago Pro
 
-Welcome to the wonderful world of automatic onsen eggs!
+Hey **HELEN**, welcome to the wonderful world of automatic onsen eggs!
 
 
 ## Assmembly Instructions
