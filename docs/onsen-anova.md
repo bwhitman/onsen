@@ -13,7 +13,7 @@ If you are not ready to put together your own [custom Onsen Tamago Pro](http://o
 
 ## Install pycirculate on the Pi
 
-Set up the Pi Zero so you can ssh into it. Install pycirculate:
+[Set up the Pi Zero so you can ssh into it.](https://www.losant.com/blog/getting-started-with-the-raspberry-pi-zero-w-without-a-monitor) Install pycirculate:
 
 ```
 sudo apt-get install libglib2.0-dev python-pip
