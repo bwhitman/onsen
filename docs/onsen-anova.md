@@ -2,7 +2,7 @@
 
  ![Anova](pics/anova.jpg){:class="img-responsive" width="800px"}
 
-If you are not ready to put together your own custom Onsen Tamago Pro, you can be almost as good with some easy to use store bought parts! Here's how
+If you are not ready to put together your own [custom Onsen Tamago Pro](http://onsentamago.pro), you can be almost as good with some easy to use store bought parts! Here's how
 
 ## What to buy or have
 
