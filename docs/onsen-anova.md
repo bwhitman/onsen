@@ -1,6 +1,6 @@
 # Onsen Tamago the Easy Way 
 
- ![Anova](anova/7.jpg){:class="img-responsive" width="800px"}
+ ![Anova](pics/anova.jpg){:class="img-responsive" width="800px"}
 
 If you are not ready to put together your own custom Onsen Tamago Pro, you can be almost as good with some easy to use store bought parts! Here's how
 
