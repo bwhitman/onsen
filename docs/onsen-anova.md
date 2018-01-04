@@ -23,7 +23,11 @@ pip install pycirculate
 
 ## Set up scripts to turn on, cool, and turn off the eggs every morning.
 
-Turn on your anova and make sure it's close enough to the Pi. From the pi, run `sudo hcitool lescan`. Wait a bit until you see a number like `84:EB:18:02:xx:xx`. That is your address of the Anova. In the scripts below, make sure you copy it in.
+Turn on your anova and make sure it's close enough to the Pi. 
+
+From the pi, run `sudo hcitool lescan`. 
+
+Wait a bit until you see a number like `84:EB:18:02:xx:xx`. That is your address of the Anova. In the scripts below, make sure you copy it in.
 
 Put this script called `egg_start.py` in your home folder:
 
