@@ -34,6 +34,7 @@ Put this script called `egg_start.py` in your home folder:
 ```
 from pycirculate.anova import AnovaController
 anova = AnovaController("84:EB:18:02:xx:xx")
+anova.set_unit('c')
 anova.set_timer(240)
 anova.set_temp(62.5)
 anova.start_anova()
