@@ -63,7 +63,7 @@ Run `crontab -e` to edit your crontab, and add these three lines
 0 10 * * 1,2,3,4,5 python /home/pi/egg_stop.py
 ```
 
-If you are not an early riser and want your eggs as a different time, just adjust that second column of hours: this means at 6am it will start cooking the eggs to 62.5, at 7am will start cooling them down to 54 and keeping them there, and at 10 will shut off. 
+If you are not an early riser and want your eggs as a different time, just adjust that second column of hours: this means at 6am it will start cooking the eggs to 62.5, at 7am will start cooling them down to 54 and keeping them there, and at 10 will shut off. The 1,2,3,4,5 means it only runs Monday through Friday. 
 
 ## Eat eggs
 
