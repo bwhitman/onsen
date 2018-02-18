@@ -29,6 +29,13 @@ From the pi, run `sudo hcitool lescan`.
 
 Wait a bit until you see a number like `84:EB:18:02:xx:xx`. That is your address of the Anova. In the scripts below, make sure you copy it in.
 
+Alternatively, if you see a bunch of addresses and can't easily tell which one is your Anova, open the app on your phone and unpair with the cooker. You should then see a couple of lines like this:
+
+```
+7C:EC:79:69:7F:1C (unknown)
+7C:EC:79:69:7F:1C Anova
+```
+
 Put this script called `egg_start.py` in your home folder:
 
 ```
